@@ -56,7 +56,7 @@
         </div>
     </nav>
     <!-- Banner Section -->
-    <header class="container mx-auto my-10">
+    <header class="container mx-auto my-10 hidden">
         <div class="h-[600px] bg-white bg-gradient-to-b from-[#050533F6] to-[#12132D66] rounded-2xl bg-no-repeat">
           <img src="./images/bgbanner.png" alt="" class="mix-blend-overlay  h-[600px] absolute ">
             <div class="flex justify-around relative top-28 space-y-">
@@ -83,37 +83,36 @@
     </header>
     <!-- Main Section -->
     <main>
-      <section class="container mx-auto my-10">
+      <section class="container mx-auto my-10 hidden">
          <h2 class="text-black text-3xl font-bold text-center">Let’s Discuss</h2>
          <p class="text-center pl-96 pr-96 py-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
       </section>
-      <section class="container mx-auto my-10 flex gap-10">
+      <section class="container mx-auto my-10 hidden">
         <!-- Latest Post Section -->
-        <div id="post-id" class="border-2 border-red-300 flex gap-14 w-[70%]">
-            <div class="relative rounded-lg">
-                <img class="w-44 h-52 shadow-lg border-2 border-black " src="./images/man.png" alt="">
-                <div class="w-8 h-8 bg-green-600 border-2 border-red-500 rounded-full absolute top-0 right-0"></div>
-            </div>
-            <div>
-                <div class="flex gap-6">
-                  <h4>#Music</h4>
-                  <p>Author:<h3> Awlad Hossain</h3></p>
-                </div>
-                <h2 class="text-2xl font-bold py-3">10 Kids Unaware of Their Halloween Costume</h2>
-                <p class="py-4">It’s one thing to subject yourself to ha Halloween costume mishap because, <br> hey that’s your prerogative</p>
-                <div class="flex gap-4">
-                    <img src="./images/tabler-icon-message-2.png" alt="">
-                    <p>560</p>
-                    <img src="./images/tabler-icon-eye.png" alt="">
-                    <p>1568</p>
-                    <img src="./images/tabler-icon-clock-hour-9.png" alt="">
-                    <p>5min</p>
-                </div>
-            </div>
+        <div id = "post-container" class="container mx-auto grid grid-cols-1 gap-6">
 
         </div>
-        <div class="border-2 border-red-500 w-[30%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat odio enim veniam ipsum quasi quidem quibusdam magni dolores quisquam?</div>
+        
+        <!-- <div class="border-2 border-red-500 w-[30%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat odio enim veniam ipsum quasi quidem quibusdam magni dolores quisquam?</div> -->
       </section>
+      <section class="container mx-auto my-10">
+        <div class="bg-[#12132D] w-screen-96 flex">
+          <div class="text-white space-y-2 lg:space-y-3 lg:pl-24 pl-10">
+            <h2 class="text-xl lg:text-3xl font-bold lg:pt-16 pt-2 ">Join Our Forum</h2>
+            <p class=" lg:pr-96 lg:pb-6">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+            <div class="pb-6">
+              <button class="btn bg-[#797DFC] rounded-3xl  ">Registered Now</button>
+            </div>
+          </div>
+          <div class="lg:pr-52 pt-16">
+            <img class="w-full" src="./images/joinforum.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto my-10 hidden">
+        <h2 class="text-black text-3xl font-bold text-center">Latest Posts</h2>
+        <p class="text-center pl-4 lg:pl-96 pr-4 lg:pr-96  py-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+     </section>
     </main>
     <!-- Footer Section -->
     <footer>
