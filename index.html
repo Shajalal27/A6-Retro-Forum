@@ -9,8 +9,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awasome link -->
     <script src="https://kit.fontawesome.com/212f27f99d.js" crossorigin="anonymous"></script>
+    <!-- Font manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+      .font-manrope{
+          font-family: 'Manrope', sans-serif;
+      }
+  </style>
 </head>
-<body>
+<body class="">
     <!-- Nav section -->
     <nav class="container mx-auto  my-10 flex-cols-1 lg:flex justify-between items-center ">
         <div class="lg:pl-0 pl-[50%] pb-8">
@@ -42,9 +51,75 @@
                 </ul>
             </div>
             <div class="bg-indigo-400	px-6 py-3 rounded-3xl ">
-                <button class="text-white">Sign in</button>
+                <button class="text-white">Sign In</button>
             </div>
         </div>
     </nav>
+    <!-- Banner Section -->
+    <header class="container mx-auto my-10">
+        <div class="h-[600px] bg-white bg-gradient-to-b from-[#050533F6] to-[#12132D66] rounded-2xl bg-no-repeat">
+          <img src="./images/bgbanner.png" alt="" class="mix-blend-overlay  h-[600px] absolute ">
+            <div class="flex justify-around relative top-28 space-y-">
+              <div class="text-4xl text-white font-extrabold">
+                <h2>Welcome to the <br> <span>ReTro</span>Forum</h2>
+                <p>Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+                <div id="input-field">
+                   <input type="text" placeholder="Search here anything">
+                   <button>Search</button>
+                </div>
+              </div>
+              <div class="">
+                <h4>Registered Users</h4>
+                <p>01</p>
+                <h4>Forum</h4>
+                <p>5</p>
+                <h4>Topics</h4>
+                <p>01</p>
+                <h4>Replies</h4>
+                <p>01</p>
+              </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <section class="container mx-auto my-10">
+         <h2 class="text-black text-3xl font-bold text-center">Let’s Discuss</h2>
+         <p class="text-center pl-96 pr-96 py-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+      </section>
+      <section class="container mx-auto my-10 flex gap-10">
+        <!-- Latest Post Section -->
+        <div id="post-id" class="border-2 border-red-300 flex gap-14 w-[70%]">
+            <div class="relative rounded-lg">
+                <img class="w-44 h-52 shadow-lg border-2 border-black " src="./images/man.png" alt="">
+                <div class="w-8 h-8 bg-green-600 border-2 border-red-500 rounded-full absolute top-0 right-0"></div>
+            </div>
+            <div>
+                <div class="flex gap-6">
+                  <h4>#Music</h4>
+                  <p>Author:<h3> Awlad Hossain</h3></p>
+                </div>
+                <h2 class="text-2xl font-bold py-3">10 Kids Unaware of Their Halloween Costume</h2>
+                <p class="py-4">It’s one thing to subject yourself to ha Halloween costume mishap because, <br> hey that’s your prerogative</p>
+                <div class="flex gap-4">
+                    <img src="./images/tabler-icon-message-2.png" alt="">
+                    <p>560</p>
+                    <img src="./images/tabler-icon-eye.png" alt="">
+                    <p>1568</p>
+                    <img src="./images/tabler-icon-clock-hour-9.png" alt="">
+                    <p>5min</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="border-2 border-red-500 w-[30%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat odio enim veniam ipsum quasi quidem quibusdam magni dolores quisquam?</div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
