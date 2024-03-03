@@ -56,27 +56,35 @@
         </div>
     </nav>
     <!-- Banner Section -->
-    <header class="container mx-auto my-10 hidden">
-        <div class="h-[600px] bg-white bg-gradient-to-b from-[#050533F6] to-[#12132D66] rounded-2xl bg-no-repeat">
-          <img src="./images/bgbanner.png" alt="" class="mix-blend-overlay  h-[600px] absolute ">
-            <div class="flex justify-around relative top-28 space-y-">
-              <div class="text-4xl text-white font-extrabold">
-                <h2>Welcome to the <br> <span>ReTro</span>Forum</h2>
+    <header class="container mx-auto my-10">
+        <div class="h-screen w-full lg:h-80 pl-10 bg-white bg-gradient-to-b from-[#050533F6] to-[#12132D66] rounded-2xl bg-no-repeat">
+          <img src="./images/bgbanner.png" alt="" class="mix-blend-overlay  absolute w-full ">
+            <div class="lg:flex flex-cols-1  justify-around items-center relative top-16 space-y-4">
+              <div class="text-white h-48">
+                <h2 class="text-4xl font-extrabold pb-4">Welcome to the <br> <span>ReTro</span> Forum</h2>
                 <p>Share your favorite opinion and win and wp <br> forum coffee mug!</p>
-                <div id="input-field">
-                   <input type="text" placeholder="Search here anything">
-                   <button>Search</button>
+                <div id="input-field" class="pt-4 ">
+                   <input class="bg-white rounded-3xl pl-2 pr-20 py-2" type="text" placeholder="Search here anything">
+                   <button class="bg-[#797DFC] rounded-3xl -ml-20 px-2 py-1">Search</button>
                 </div>
               </div>
-              <div class="">
-                <h4>Registered Users</h4>
-                <p>01</p>
-                <h4>Forum</h4>
-                <p>5</p>
-                <h4>Topics</h4>
-                <p>01</p>
-                <h4>Replies</h4>
-                <p>01</p>
+              <div class="bg-white  w-60 space-y-4 p-6 rounded-xl">
+                <div class="flex justify-between">
+                  <h4>Registered Users</h4>
+                  <p>01</p>
+                </div>
+                <div class="flex justify-between">
+                  <h4>Forum</h4>
+                  <p>5</p>
+                </div>
+                <div class="flex justify-between">
+                  <h4>Topics</h4>
+                  <p>01</p>
+                </div>
+                <div class="flex justify-between">
+                  <h4>Replies</h4>
+                  <p>01</p>
+                </div>
               </div>
             </div>
         </div>
