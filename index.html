@@ -63,9 +63,9 @@
               <div class="text-white h-48">
                 <h2 class="text-4xl font-extrabold pb-4">Welcome to the <br> <span>ReTro</span> Forum</h2>
                 <p>Share your favorite opinion and win and wp <br> forum coffee mug!</p>
-                <div id="input-field" class="pt-4 ">
-                   <input class="bg-white rounded-3xl pl-2 pr-20 py-2" type="text" placeholder="Search here anything">
-                   <button class="bg-[#797DFC] rounded-3xl -ml-20 px-2 py-1">Search</button>
+                <div class="search-container pt-4 ">
+                   <input id="input-search" class="bg-white text-black rounded-3xl pl-2 pr-20 py-2" type="text" placeholder="Search here anything">
+                   <button id="search-btn" onclick="searchCatName('${item.category.name}')" class="bg-[#797DFC]  rounded-3xl -ml-20 px-2 py-1">Search</button>
                 </div>
               </div>
               <div class="bg-white  w-60 space-y-4 p-6 rounded-xl">
@@ -95,13 +95,21 @@
          <h2 class="text-black text-3xl font-bold text-center">Let’s Discuss</h2>
          <p class="text-center pl-10 lg:pl-96 pr-10 lg:pr-96 py-6 text-gray-400git">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
       </section>
-      <section class="container mx-auto my-10">
+      <section class="container mx-auto my-10 flex">
         <!-- All Post Section -->
         <div id = "post-container" class="container mx-auto grid grid-cols-1 gap-6">
           
         </div>
         
-        <!-- <div class="border-2 border-red-500 w-[30%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat odio enim veniam ipsum quasi quidem quibusdam magni dolores quisquam?</div> -->
+        <div id="sidebar" class=" w-[40%] bg-gray-200 rounded-2xl">
+            <div class="flex justify-between p-6">
+                <h2 class="text-2xl font-bold">Title</h2>
+                <div class="flex gap-4">
+                  <img src="./images/tick.png" alt="">
+                  <p class="text-2xl font-bold">Mark as read<span id="post-value" class="pl-2">0</span></p>
+                </div>
+            </div>
+        </div>
       </section>
       <section class="container mx-auto my-10">
         <div class="bg-[#12132D] w-screen-96 flex">
